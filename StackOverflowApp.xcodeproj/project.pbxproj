@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		54794865225A7B19008C090D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54794864225A7B19008C090D /* AppDelegate.swift */; };
-		54794867225A7B19008C090D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54794866225A7B19008C090D /* ViewController.swift */; };
 		5479486A225A7B19008C090D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54794868225A7B19008C090D /* Main.storyboard */; };
 		5479486C225A7B1C008C090D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5479486B225A7B1C008C090D /* Assets.xcassets */; };
 		5479486F225A7B1C008C090D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5479486D225A7B1C008C090D /* LaunchScreen.storyboard */; };
+		54794879225A8309008C090D /* UsersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54794878225A8309008C090D /* UsersTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		54794861225A7B19008C090D /* StackOverflowSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverflowSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54794861225A7B19008C090D /* StackOverflowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverflowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54794864225A7B19008C090D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		54794866225A7B19008C090D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		54794869225A7B19008C090D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5479486B225A7B1C008C090D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5479486E225A7B1C008C090D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54794870225A7B1C008C090D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54794876225A8309008C090D /* StackOverflowApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StackOverflowApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		54794877225A8309008C090D /* UsersTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsersTableViewController.h; sourceTree = "<group>"; };
+		54794878225A8309008C090D /* UsersTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsersTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +40,7 @@
 		54794858225A7B19008C090D = {
 			isa = PBXGroup;
 			children = (
-				54794863225A7B19008C090D /* StackOverflowSwift */,
+				54794863225A7B19008C090D /* StackOverflowApp */,
 				54794862225A7B19008C090D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,30 +48,40 @@
 		54794862225A7B19008C090D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				54794861225A7B19008C090D /* StackOverflowSwift.app */,
+				54794861225A7B19008C090D /* StackOverflowApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		54794863225A7B19008C090D /* StackOverflowSwift */ = {
+		54794863225A7B19008C090D /* StackOverflowApp */ = {
 			isa = PBXGroup;
 			children = (
 				54794864225A7B19008C090D /* AppDelegate.swift */,
-				54794866225A7B19008C090D /* ViewController.swift */,
 				54794868225A7B19008C090D /* Main.storyboard */,
 				5479486B225A7B1C008C090D /* Assets.xcassets */,
 				5479486D225A7B1C008C090D /* LaunchScreen.storyboard */,
 				54794870225A7B1C008C090D /* Info.plist */,
+				5479487A225A846C008C090D /* View Controllers */,
+				54794876225A8309008C090D /* StackOverflowApp-Bridging-Header.h */,
 			);
-			path = StackOverflowSwift;
+			path = StackOverflowApp;
+			sourceTree = "<group>";
+		};
+		5479487A225A846C008C090D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				54794877225A8309008C090D /* UsersTableViewController.h */,
+				54794878225A8309008C090D /* UsersTableViewController.m */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		54794860225A7B19008C090D /* StackOverflowSwift */ = {
+		54794860225A7B19008C090D /* StackOverflowApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 54794873225A7B1C008C090D /* Build configuration list for PBXNativeTarget "StackOverflowSwift" */;
+			buildConfigurationList = 54794873225A7B1C008C090D /* Build configuration list for PBXNativeTarget "StackOverflowApp" */;
 			buildPhases = (
 				5479485D225A7B19008C090D /* Sources */,
 				5479485E225A7B19008C090D /* Frameworks */,
@@ -79,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = StackOverflowSwift;
+			name = StackOverflowApp;
 			productName = StackOverflowSwift;
-			productReference = 54794861225A7B19008C090D /* StackOverflowSwift.app */;
+			productReference = 54794861225A7B19008C090D /* StackOverflowApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -96,10 +108,11 @@
 				TargetAttributes = {
 					54794860225A7B19008C090D = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
-			buildConfigurationList = 5479485C225A7B19008C090D /* Build configuration list for PBXProject "StackOverflowSwift" */;
+			buildConfigurationList = 5479485C225A7B19008C090D /* Build configuration list for PBXProject "StackOverflowApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +125,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				54794860225A7B19008C090D /* StackOverflowSwift */,
+				54794860225A7B19008C090D /* StackOverflowApp */,
 			);
 		};
 /* End PBXProject section */
@@ -135,7 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54794867225A7B19008C090D /* ViewController.swift in Sources */,
+				54794879225A8309008C090D /* UsersTableViewController.m in Sources */,
 				54794865225A7B19008C090D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +295,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HJWHRG4HXB;
 				INFOPLIST_FILE = StackOverflowSwift/Info.plist;
@@ -289,8 +303,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jmkr.StackOverflowSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jmkr.StackOverflowApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "StackOverflowApp/StackOverflowApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +316,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HJWHRG4HXB;
 				INFOPLIST_FILE = StackOverflowSwift/Info.plist;
@@ -307,8 +324,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jmkr.StackOverflowSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jmkr.StackOverflowApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "StackOverflowApp/StackOverflowApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -317,7 +335,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5479485C225A7B19008C090D /* Build configuration list for PBXProject "StackOverflowSwift" */ = {
+		5479485C225A7B19008C090D /* Build configuration list for PBXProject "StackOverflowApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				54794871225A7B1C008C090D /* Debug */,
@@ -326,7 +344,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		54794873225A7B1C008C090D /* Build configuration list for PBXNativeTarget "StackOverflowSwift" */ = {
+		54794873225A7B1C008C090D /* Build configuration list for PBXNativeTarget "StackOverflowApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				54794874225A7B1C008C090D /* Debug */,
