@@ -12,6 +12,7 @@
 		5479486C225A7B1C008C090D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5479486B225A7B1C008C090D /* Assets.xcassets */; };
 		5479486F225A7B1C008C090D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5479486D225A7B1C008C090D /* LaunchScreen.storyboard */; };
 		54794879225A8309008C090D /* UsersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54794878225A8309008C090D /* UsersTableViewController.m */; };
+		5479487D225A88FD008C090D /* UserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5479487C225A88FD008C090D /* UserTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		54794876225A8309008C090D /* StackOverflowApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StackOverflowApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		54794877225A8309008C090D /* UsersTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsersTableViewController.h; sourceTree = "<group>"; };
 		54794878225A8309008C090D /* UsersTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsersTableViewController.m; sourceTree = "<group>"; };
+		5479487B225A88FD008C090D /* UserTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserTableViewCell.h; sourceTree = "<group>"; };
+		5479487C225A88FD008C090D /* UserTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +59,13 @@
 		54794863225A7B19008C090D /* StackOverflowApp */ = {
 			isa = PBXGroup;
 			children = (
+				5479487A225A846C008C090D /* View Controllers */,
+				5479487E225A8904008C090D /* Views */,
 				54794864225A7B19008C090D /* AppDelegate.swift */,
 				54794868225A7B19008C090D /* Main.storyboard */,
 				5479486B225A7B1C008C090D /* Assets.xcassets */,
 				5479486D225A7B1C008C090D /* LaunchScreen.storyboard */,
 				54794870225A7B1C008C090D /* Info.plist */,
-				5479487A225A846C008C090D /* View Controllers */,
 				54794876225A8309008C090D /* StackOverflowApp-Bridging-Header.h */,
 			);
 			path = StackOverflowApp;
@@ -74,6 +78,15 @@
 				54794878225A8309008C090D /* UsersTableViewController.m */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		5479487E225A8904008C090D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5479487B225A88FD008C090D /* UserTableViewCell.h */,
+				5479487C225A88FD008C090D /* UserTableViewCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +163,7 @@
 			files = (
 				54794879225A8309008C090D /* UsersTableViewController.m in Sources */,
 				54794865225A7B19008C090D /* AppDelegate.swift in Sources */,
+				5479487D225A88FD008C090D /* UserTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +312,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HJWHRG4HXB;
-				INFOPLIST_FILE = StackOverflowSwift/Info.plist;
+				INFOPLIST_FILE = StackOverflowApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,7 +333,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HJWHRG4HXB;
-				INFOPLIST_FILE = StackOverflowSwift/Info.plist;
+				INFOPLIST_FILE = StackOverflowApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
