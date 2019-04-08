@@ -33,10 +33,10 @@
     [self.profileImage sd_cancelCurrentImageLoad];
     self.profileImage.image = nil;
     [self.userNameLabel setText:@""];
-    [self.reputationLabel setText:@""];
-    [self.goldLabel setText:@""];
-    [self.silverLabel setText:@""];
-    [self.bronzeLabel setText:@""];
+    [self.reputationLabel setText:@"0"];
+    [self.goldLabel setText:@"0"];
+    [self.silverLabel setText:@"0"];
+    [self.bronzeLabel setText:@"0"];
 }
 
 /**
