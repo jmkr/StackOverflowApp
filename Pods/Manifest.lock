@@ -1,4 +1,5 @@
 PODS:
+  - JSONModel (1.8.0)
   - SDWebImage (4.4.6):
     - SDWebImage/Core (= 4.4.6)
   - SDWebImage/Core (4.4.6)
@@ -7,18 +8,21 @@ PODS:
   - Siesta/Core (1.4.3)
 
 DEPENDENCIES:
+  - JSONModel
   - SDWebImage
   - Siesta (~> 1.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - JSONModel
     - SDWebImage
     - Siesta
 
 SPEC CHECKSUMS:
+  JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
   SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
   Siesta: 83795fdf6a43232d1d2909e1a3dfb92ab5916d26
 
-PODFILE CHECKSUM: dd91d82b9c2e47bea959c06d698c2f59fd2ccc13
+PODFILE CHECKSUM: 6c3dfe6d13bcc52ac20a229453290e27b3914107
 
 COCOAPODS: 1.5.3

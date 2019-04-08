@@ -16,9 +16,16 @@
 @property (nonatomic,weak) IBOutlet UILabel *goldLabel;
 @property (nonatomic,weak) IBOutlet UILabel *silverLabel;
 @property (nonatomic,weak) IBOutlet UILabel *bronzeLabel;
+@property (nonatomic,strong) NSNumberFormatter *numberFormatter;
 @end
 
 @implementation UserTableViewCell
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    self.numberFormatter = [NSNumberFormatter new];
+    [self.numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
+}
 
 - (void)prepareForReuse {
     [super prepareForReuse];
@@ -31,7 +38,8 @@
         [self.userNameLabel setText:[user valueForKey:@"display_name"]];
     }
     if ([user valueForKey:@"reputation"] != nil) {
-        [self.reputationLabel setText:[[user valueForKey:@"reputation"] stringValue]];
+        NSString *reputation =  [self.numberFormatter stringFromNumber:[NSNumber numberWithInteger:[[user valueForKey:@"reputation"] intValue]]];
+        [self.reputationLabel setText:reputation];
     }
     if ([user objectForKey:@"badge_counts"] != nil) {
         if ([user[@"badge_counts"] valueForKey:@"gold"] != nil) {

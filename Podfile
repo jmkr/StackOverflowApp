@@ -8,6 +8,7 @@ target 'StackOverflowApp' do
   # Pods for StackOverflowApp
   pod 'Siesta', '~> 1.0'
   pod 'SDWebImage'
+  pod 'JSONModel'
 
 
 end

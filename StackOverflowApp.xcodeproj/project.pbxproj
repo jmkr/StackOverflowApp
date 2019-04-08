@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		547109A2225BA21B00FF1BF4 /* AddUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 547109A1225BA21B00FF1BF4 /* AddUserViewController.m */; };
+		547109A5225BAAE900FF1BF4 /* AddUserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 547109A4225BAAE900FF1BF4 /* AddUserTableViewCell.m */; };
 		54794865225A7B19008C090D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54794864225A7B19008C090D /* AppDelegate.swift */; };
 		5479486A225A7B19008C090D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54794868225A7B19008C090D /* Main.storyboard */; };
 		5479486C225A7B1C008C090D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5479486B225A7B1C008C090D /* Assets.xcassets */; };
@@ -20,6 +22,10 @@
 /* Begin PBXFileReference section */
 		26D9582F1D6FEBC5A736D9A9 /* Pods_StackOverflowApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StackOverflowApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B6C8001E861DDB6B5579E3 /* Pods-StackOverflowApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackOverflowApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-StackOverflowApp/Pods-StackOverflowApp.release.xcconfig"; sourceTree = "<group>"; };
+		547109A0225BA21B00FF1BF4 /* AddUserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddUserViewController.h; sourceTree = "<group>"; };
+		547109A1225BA21B00FF1BF4 /* AddUserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddUserViewController.m; sourceTree = "<group>"; };
+		547109A3225BAAE900FF1BF4 /* AddUserTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddUserTableViewCell.h; sourceTree = "<group>"; };
+		547109A4225BAAE900FF1BF4 /* AddUserTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddUserTableViewCell.m; sourceTree = "<group>"; };
 		54794861225A7B19008C090D /* StackOverflowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverflowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54794864225A7B19008C090D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54794869225A7B19008C090D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -102,6 +108,8 @@
 			children = (
 				54794877225A8309008C090D /* UsersTableViewController.h */,
 				54794878225A8309008C090D /* UsersTableViewController.m */,
+				547109A0225BA21B00FF1BF4 /* AddUserViewController.h */,
+				547109A1225BA21B00FF1BF4 /* AddUserViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -111,6 +119,8 @@
 			children = (
 				5479487B225A88FD008C090D /* UserTableViewCell.h */,
 				5479487C225A88FD008C090D /* UserTableViewCell.m */,
+				547109A3225BAAE900FF1BF4 /* AddUserTableViewCell.h */,
+				547109A4225BAAE900FF1BF4 /* AddUserTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -203,6 +213,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-StackOverflowApp/Pods-StackOverflowApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Siesta/Siesta.framework",
 			);
@@ -210,6 +221,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Siesta.framework",
 			);
@@ -248,6 +260,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				54794880225A97F6008C090D /* StackExchangeAPI.swift in Sources */,
+				547109A2225BA21B00FF1BF4 /* AddUserViewController.m in Sources */,
+				547109A5225BAAE900FF1BF4 /* AddUserTableViewCell.m in Sources */,
 				54794879225A8309008C090D /* UsersTableViewController.m in Sources */,
 				54794865225A7B19008C090D /* AppDelegate.swift in Sources */,
 				5479487D225A88FD008C090D /* UserTableViewCell.m in Sources */,
