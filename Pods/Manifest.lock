@@ -1,0 +1,24 @@
+PODS:
+  - SDWebImage (4.4.6):
+    - SDWebImage/Core (= 4.4.6)
+  - SDWebImage/Core (4.4.6)
+  - Siesta (1.4.3):
+    - Siesta/Core (= 1.4.3)
+  - Siesta/Core (1.4.3)
+
+DEPENDENCIES:
+  - SDWebImage
+  - Siesta (~> 1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SDWebImage
+    - Siesta
+
+SPEC CHECKSUMS:
+  SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
+  Siesta: 83795fdf6a43232d1d2909e1a3dfb92ab5916d26
+
+PODFILE CHECKSUM: dd91d82b9c2e47bea959c06d698c2f59fd2ccc13
+
+COCOAPODS: 1.5.3

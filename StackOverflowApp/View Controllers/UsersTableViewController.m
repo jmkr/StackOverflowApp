@@ -7,10 +7,13 @@
 //
 
 #import "UsersTableViewController.h"
+#import "UserTableViewCell.h"
+#import "StackOverflowApp-Swift.h"
 
 static NSString* const reuseId = @"USER_CELL_REUSE_ID";
 
 @interface UsersTableViewController () <UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, strong) BOSResource *usersResource;
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSArray *users;
 @end
@@ -19,6 +22,7 @@ static NSString* const reuseId = @"USER_CELL_REUSE_ID";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.usersResource = [[StackExchangeAPI.instance resource:@"users"] withParam:@"site" value:@"stackoverflow"];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -27,19 +31,34 @@ static NSString* const reuseId = @"USER_CELL_REUSE_ID";
 }
 
 - (void)fetchUsers {
-    
+    (void)[[self.usersResource requestWithMethod:@"GET"] onCompletion:^(BOSEntity *response, BOSError *error) {
+        if (error != nil) {
+            self.users = @[];
+        } else if (response.content != nil && [response.content objectForKey:@"items"] != nil) {
+            self.users = [response.content objectForKey:@"items"];
+        }
+    }];
+}
+
+-(void)setUsers:(NSArray *)users {
+    _users = users;
+    [self.tableView reloadData];
 }
 
 #pragma mark - UITableViewDataSource
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseId forIndexPath:indexPath];
-    NSDictionary *user = [_users objectAtIndex:indexPath.row];
+    UserTableViewCell *cell = (UserTableViewCell *)[tableView dequeueReusableCellWithIdentifier:reuseId forIndexPath:indexPath];
+    [cell setUser:[_users objectAtIndex:indexPath.row]];
     return cell;
 }
 
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return _users.count;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end

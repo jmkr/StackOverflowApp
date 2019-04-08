@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UserTableViewCell : UITableViewCell
-
+-(void)setUser:(NSDictionary *)user;
 @end
 
 NS_ASSUME_NONNULL_END
