@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		547109A2225BA21B00FF1BF4 /* AddUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 547109A1225BA21B00FF1BF4 /* AddUserViewController.m */; };
 		547109A5225BAAE900FF1BF4 /* AddUserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 547109A4225BAAE900FF1BF4 /* AddUserTableViewCell.m */; };
+		547109B0225BC19100FF1BF4 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 547109AF225BC19100FF1BF4 /* UserModel.m */; };
 		54794865225A7B19008C090D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54794864225A7B19008C090D /* AppDelegate.swift */; };
 		5479486A225A7B19008C090D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54794868225A7B19008C090D /* Main.storyboard */; };
 		5479486C225A7B1C008C090D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5479486B225A7B1C008C090D /* Assets.xcassets */; };
@@ -26,6 +27,8 @@
 		547109A1225BA21B00FF1BF4 /* AddUserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddUserViewController.m; sourceTree = "<group>"; };
 		547109A3225BAAE900FF1BF4 /* AddUserTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddUserTableViewCell.h; sourceTree = "<group>"; };
 		547109A4225BAAE900FF1BF4 /* AddUserTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddUserTableViewCell.m; sourceTree = "<group>"; };
+		547109AE225BC19100FF1BF4 /* UserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UserModel.h; path = ../Models/UserModel.h; sourceTree = "<group>"; };
+		547109AF225BC19100FF1BF4 /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = UserModel.m; path = ../Models/UserModel.m; sourceTree = "<group>"; };
 		54794861225A7B19008C090D /* StackOverflowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverflowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54794864225A7B19008C090D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54794869225A7B19008C090D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -69,6 +72,15 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		547109B1225BC19800FF1BF4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				547109AE225BC19100FF1BF4 /* UserModel.h */,
+				547109AF225BC19100FF1BF4 /* UserModel.m */,
+			);
+			path = "Models";
+			sourceTree = "<group>";
+		};
 		54794858225A7B19008C090D = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +104,7 @@
 			children = (
 				5479487A225A846C008C090D /* View Controllers */,
 				5479487E225A8904008C090D /* Views */,
+				547109B1225BC19800FF1BF4 /* Models */,
 				5471099F225B186B00FF1BF4 /* Network */,
 				54794864225A7B19008C090D /* AppDelegate.swift */,
 				54794868225A7B19008C090D /* Main.storyboard */,
@@ -261,6 +274,7 @@
 			files = (
 				54794880225A97F6008C090D /* StackExchangeAPI.swift in Sources */,
 				547109A2225BA21B00FF1BF4 /* AddUserViewController.m in Sources */,
+				547109B0225BC19100FF1BF4 /* UserModel.m in Sources */,
 				547109A5225BAAE900FF1BF4 /* AddUserTableViewCell.m in Sources */,
 				54794879225A8309008C090D /* UsersTableViewController.m in Sources */,
 				54794865225A7B19008C090D /* AppDelegate.swift in Sources */,
